@@ -7,6 +7,19 @@
 * **nonce:** repair stale-low sender frontiers in the alarm cycle with a 5 minute repair age, 10 minute refresh cooldown, and 15 minute hand expiry
 * **docs:** update agent and ops guidance for held sender queues and stale-sender recovery
 
+## [1.34.0](https://github.com/aibtcdev/x402-sponsor-relay/compare/x402-sponsor-relay-v1.33.2...x402-sponsor-relay-v1.34.0) (2026-05-25)
+
+
+### Features
+
+* **reconcile:** cron sweep to recover stuck payment records ([#398](https://github.com/aibtcdev/x402-sponsor-relay/issues/398)) ([#401](https://github.com/aibtcdev/x402-sponsor-relay/issues/401)) ([6309032](https://github.com/aibtcdev/x402-sponsor-relay/commit/6309032c2f9cba41ecff927c128a7cfad7ccfbfe))
+
+
+### Bug Fixes
+
+* **nonce-do:** re-deliver zombie-retired dispatch entries instead of dropping them ([#398](https://github.com/aibtcdev/x402-sponsor-relay/issues/398)) ([#403](https://github.com/aibtcdev/x402-sponsor-relay/issues/403)) ([6388a6e](https://github.com/aibtcdev/x402-sponsor-relay/commit/6388a6e33ca340337dd14ff3870bd943d9e74aba))
+* **queue:** terminalize payments on retry exhaustion so they can't strand at "queued" ([#398](https://github.com/aibtcdev/x402-sponsor-relay/issues/398)) ([#399](https://github.com/aibtcdev/x402-sponsor-relay/issues/399)) ([1ddb6ad](https://github.com/aibtcdev/x402-sponsor-relay/commit/1ddb6ad513436356df70cab959247a067488f679))
+
 ## [1.33.2](https://github.com/aibtcdev/x402-sponsor-relay/compare/x402-sponsor-relay-v1.33.1...x402-sponsor-relay-v1.33.2) (2026-05-19)
 
 
